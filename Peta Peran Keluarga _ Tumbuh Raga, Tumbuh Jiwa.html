@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Peta Peran Keluarga | Tumbuh Raga, Tumbuh Jiwa</title>
+<style>
+:root{--bg:#F1F5EF;--ink:#1D2A24;--muted:#58655E;--g:#2E7D5B;--gd:#1E4D3A;--card:#FFFFFF;--line:#D5DFD7;--soft:#E3EEE6;--warn:#FFF0D6;--ob:#E08A2E;--p0:#C4551C;--p1:#2E7D5B;--p2:#2F6F94;--p3:#7A5A9C;--on:#FFFFFF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111C17;--ink:#EAF1EC;--muted:#A6B4AC;--g:#5DBB8E;--gd:#8FD6B2;--card:#1A2923;--line:#2C4036;--soft:#213A2E;--warn:#3A2E17;--ob:#F0A14D;--p0:#D9733B;--p1:#3F9A74;--p2:#4A8DB5;--p3:#9876BD}}
+:root[data-theme="dark"]{--bg:#111C17;--ink:#EAF1EC;--muted:#A6B4AC;--g:#5DBB8E;--gd:#8FD6B2;--card:#1A2923;--line:#2C4036;--soft:#213A2E;--warn:#3A2E17;--ob:#F0A14D;--p0:#D9733B;--p1:#3F9A74;--p2:#4A8DB5;--p3:#9876BD}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{margin:0 0 .4em;line-height:1.2;color:var(--gd);font-weight:800}
+h1{font-size:clamp(1.9rem,6vw,2.7rem)}h2{font-size:1.15rem}
+p{margin:0 0 .8em}
+.wrap{max-width:940px;margin:0 auto;padding:22px 18px 48px}
+button,textarea,input{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--ob);outline-offset:2px}
+.top{display:flex;gap:16px;align-items:center;margin-bottom:6px}
+.top svg{width:64px;height:64px;flex:none}
+.lead{color:var(--muted);max-width:60ch}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.tabs button{background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:9px 16px;font-weight:600}
+.tabs button[aria-pressed="true"]{background:var(--gd);border-color:var(--gd);color:var(--bg)}
+.layout{display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:840px){.layout{grid-template-columns:1fr 320px;align-items:start}.side{position:sticky;top:16px}}
+.task{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+.task p{margin:0 0 2px;font-weight:600}
+.task small{color:var(--muted);display:block;margin-bottom:10px}
+.who{display:flex;flex-wrap:wrap;gap:6px}
+.who button{border:1.5px solid var(--c);background:none;color:var(--ink);border-radius:999px;padding:5px 13px;font-size:.9rem}
+.who button[aria-pressed="true"]{background:var(--c);color:var(--on);font-weight:700}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.bar{display:flex;height:22px;border-radius:99px;overflow:hidden;background:var(--line);margin:10px 0}
+.bar i{display:block;background:var(--c);transition:width .5s}
+.leg{list-style:none;padding:0;margin:0 0 12px;font-size:.9rem}
+.leg li{display:flex;align-items:center;gap:8px;padding:2px 0}
+.leg b{width:12px;height:12px;border-radius:50%;background:var(--c);flex:none}
+.leg span{margin-left:auto;font-weight:700}
+.msg{background:var(--soft);border-left:5px solid var(--g);border-radius:0 10px 10px 0;padding:10px 14px;margin-bottom:14px;font-size:.95rem}
+.msg.w{background:var(--warn);border-color:var(--ob)}
+label.f{display:block;font-size:.9rem;font-weight:600;margin:12px 0 4px}
+input[type=text]{width:100%;padding:9px 12px;border-radius:8px;border:1.5px solid var(--line);background:var(--bg)}
+textarea{width:100%;height:190px;padding:10px;border-radius:8px;border:1.5px solid var(--line);background:var(--bg);font-size:.85rem;resize:vertical}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.btn{background:var(--g);color:var(--on);border:0;border-radius:999px;padding:9px 18px;font-weight:700}
+.btn.o{background:none;color:var(--gd);border:1.5px solid var(--g)}
+.hint{color:var(--muted);font-size:.85rem}
+footer{margin-top:28px;color:var(--muted);font-size:.85rem}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header>
+<div class="top">
+<svg viewBox="0 0 96 96" role="img" aria-label="Logo tunas"><circle cx="48" cy="48" r="46" fill="#2E7D5B"/><path d="M48 80V58" stroke="#FDF8F0" stroke-width="4" stroke-linecap="round"/><path d="M48 60C33 61 22 49 23 34c15 0 25 10 25 26Z" fill="#FDF8F0"/><path d="M48 60c15 1 26-11 25-26-15 0-25 10-25 26Z" fill="#E08A2E"/><circle cx="48" cy="36" r="7" fill="#F6C177"/></svg>
+<h1>Peta Peran Keluarga</h1>
+</div>
+<p class="lead">Mencegah stunting adalah kerja bersama, dan ibu bukan satu-satunya yang bertanggung jawab. Pilih tahap, tentukan siapa mengerjakan apa, lalu lihat lingkar dukungan yang terbentuk untuk dibahas bersama keluarga.</p>
+</header>
+
+<div class="tabs" id="tabs" role="group" aria-label="Pilih tahap"></div>
+
+<div class="layout">
+<div id="tasks"></div>
+<aside class="side">
+<div class="panel">
+<h2>Pembagian peran</h2>
+<div class="bar" id="bar" role="img" aria-label="Diagram pembagian tugas"></div>
+<ul class="leg" id="leg"></ul>
+<div class="msg" id="msg" aria-live="polite"></div>
+<h2 style="margin-top:16px">Lingkar dukungan</h2>
+<svg id="ring" viewBox="0 0 260 250" role="img" aria-label="Anak di tengah dikelilingi anggota keluarga" style="width:100%;height:auto;display:block"></svg>
+<p class="hint" style="margin:6px 0 0">Makin tebal garis dan makin besar lingkaran, makin banyak tugas yang dipegang. Anak di tengah dirangkul bersama.</p>
+<div class="row"><button class="btn o" id="clr">Kosongkan tahap ini</button></div>
+</div>
+</aside>
+</div>
+<footer>Daftar tugas mengacu pada buku saku “Tumbuh Raga, Tumbuh Jiwa”, dengan contoh kegiatan berupa saran praktis umum. Alat ini membantu berdiskusi dan bukan pengganti pemeriksaan tenaga kesehatan. Bila ragu dengan tumbuh kembang anak, konsultasikan ke posyandu atau puskesmas.</footer>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const P=[["Ibu","--p0"],["Ayah","--p1"],["Kakek atau nenek","--p2"],["Kerabat atau kader","--p3"]];
+const S=[
+{n:"Hamil",t:[
+["Mengatur dan menemani pemeriksaan kehamilan rutin","Pemeriksaan kehamilan dan persalinan dengan tenaga kesehatan ikut berperan [2]"],
+["Menyiapkan makanan bergizi dan memantau kenaikan berat badan ibu","Kenaikan berat badan, riwayat anemia, dan kurang energi kronis berkaitan dengan stunting [3]"],
+["Menanyakan menu dan suplemen ke bidan, dokter, atau ahli gizi","Saran umum dari buku saku"],
+["Mendengarkan cerita ibu bila sulit tidur, mudah menangis, atau cemas","Kesehatan mental ibu termasuk faktor psikososial yang dikaji [9]"],
+["Menyediakan sabun dan air bersih, menjaga sanitasi rumah","Sanitasi termasuk pendorong utama penurunan stunting [2]"],
+["Gantian mengurus rumah supaya ibu cukup istirahat","Bagi tugas pengasuhan dengan ayah dan anggota keluarga",1]]},
+{n:"0–6 bulan",t:[
+["Mendukung ibu memberi ASI eksklusif (menyiapkan makan ibu, mengurus rumah)","ASI eksklusif berkaitan dengan risiko stunting [3]"],
+["Membawa bayi ke posyandu atau puskesmas untuk diukur panjang badannya","Ukur panjang atau tinggi badan secara rutin, bukan hanya berat badan [1]"],
+["Menanggapi ocehan dan tangisan bayi dengan hangat","Pengasuhan yang responsif berkontribusi pada pencegahan [8]"],
+["Mengajak bayi bicara dan bernyanyi","Contoh stimulasi harian, saran praktis umum"],
+["Menjaga kebersihan dan membiasakan cuci tangan pakai sabun","Saran umum dari buku saku"],
+["Gantian menjaga bayi supaya ibu cukup istirahat","Merawat diri sendiri bukan sikap egois",1]]},
+{n:"6–24 bulan",t:[
+["Menyiapkan makanan beragam: protein, sayur, dan buah","Pemberian makan yang tepat [3]; variasi menu adalah saran umum"],
+["Makan bersama dalam suasana santai","Contoh stimulasi harian, saran praktis umum"],
+["Membacakan buku bergambar dan bermain (cilukba, menyusun balok)","Stimulasi yang digabung gizi dilaporkan efektif [5]"],
+["Membawa anak ke posyandu atau puskesmas untuk diukur tinggi badannya","Stunting sulit dikenali dengan mata [1]"],
+["Menjaga sanitasi dan cuci tangan pakai sabun","Sanitasi dan akses air bersih [2]"],
+["Gantian menjaga anak supaya ibu cukup istirahat","Ibu bukan satu-satunya yang bertanggung jawab",1]]}];
+let cur=0;const A={};let nm=S.map(()=>0);
+const key=(s,i)=>s+"-"+i;
+const get=(s,i)=>A[key(s,i)]||(A[key(s,i)]=new Set());
+function tabs(){$("#tabs").innerHTML="";S.forEach((s,i)=>{const b=document.createElement("button");b.textContent=s.n;b.setAttribute("aria-pressed",i==cur);b.onclick=()=>{cur=i;tabs();tasks();sum()};$("#tabs").append(b)})}
+function tasks(){const el=$("#tasks");el.innerHTML="";S[cur].t.forEach((t,i)=>{
+ const d=document.createElement("div");d.className="task";
+ d.innerHTML="<p>"+t[0]+"</p><small>"+t[1]+"</small>";
+ const w=document.createElement("div");w.className="who";w.setAttribute("role","group");w.setAttribute("aria-label","Siapa yang mengerjakan: "+t[0]);
+ P.forEach((p,k)=>{const b=document.createElement("button");b.textContent=p[0];b.style.setProperty("--c","var("+p[1]+")");b.setAttribute("aria-pressed",get(cur,i).has(k));
+  b.onclick=()=>{const s=get(cur,i);s.has(k)?s.delete(k):s.add(k);b.setAttribute("aria-pressed",s.has(k));sum()};w.append(b)});
+ d.append(w);el.append(d)})}
+function sum(){
+ const cnt=P.map(()=>0);let tot=0,un=0;
+ S[cur].t.forEach((t,i)=>{const s=get(cur,i);if(!s.size)un++;s.forEach(k=>{cnt[k]++;tot++})});
+ $("#bar").innerHTML=P.map((p,k)=>'<i style="--c:var('+p[1]+');width:'+(tot?100*cnt[k]/tot:0)+'%"></i>').join("");
+ $("#leg").innerHTML=P.map((p,k)=>'<li style="--c:var('+p[1]+')"><b></b>'+p[0]+"<span>"+cnt[k]+" tugas</span></li>").join("");
+ let m="",w=false;const T=S[cur].t,restIdx=T.findIndex(t=>t[2]);const rs=get(cur,restIdx);
+ const others=[...rs].filter(k=>k!=0).length;
+ if(!tot){m="Mulai dengan mengetuk nama di bawah tiap tugas. Satu tugas boleh dikerjakan lebih dari satu orang."}
+ else if(!others){m="Tugas “gantian” belum dipegang orang lain selain ibu. Coba minta ayah, kakek atau nenek, atau kerabat untuk mengambilnya.";w=true}
+ else if(tot>=4&&cnt[0]/tot>=.6){m="Ibu memegang sebagian besar tugas. Coba bicarakan apakah ada yang bisa dibagi ke ayah atau anggota keluarga lain.";w=true}
+ else if(un){m=un+" tugas belum ada yang memegang. Tidak harus semuanya terisi, tetapi baik dibahas bersama."}
+ else{m="Pembagian terlihat seimbang dan semua tugas sudah ada yang memegang. Bahas lagi bersama keluarga dan sesuaikan dengan kondisi masing-masing."}
+ const e=$("#msg");e.textContent=m;e.className="msg"+(w?" w":"");
+ ring(cnt,tot);
+}
+function ring(cnt,tot){
+ const pos=[[55,60],[205,60],[55,175],[205,175]],nm=["Ibu","Ayah","Kakek/nenek","Kerabat/kader"];
+ let h="";
+ pos.forEach((p,k)=>{h+='<line x1="'+p[0]+'" y1="'+p[1]+'" x2="130" y2="118" stroke="var('+P[k][1]+')" stroke-linecap="round" stroke-width="'+(cnt[k]?2+Math.min(cnt[k],6)*2:2)+'" '+(cnt[k]?'opacity=".85"':'stroke-dasharray="2 7" opacity=".5"')+'/>'});
+ pos.forEach((p,k)=>{const r=17+Math.min(cnt[k],6)*2;
+  h+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+r+'" fill="var('+P[k][1]+')" style="transition:r .4s"/><text x="'+p[0]+'" y="'+(p[1]+5)+'" text-anchor="middle" style="font-size:14px;font-weight:700;fill:#fff">'+cnt[k]+'</text><text x="'+p[0]+'" y="'+(p[1]+r+15)+'" text-anchor="middle" style="font-size:12px;fill:var(--ink)">'+nm[k]+'</text>'});
+ h+='<circle cx="130" cy="118" r="26" fill="#F6C177"/><path d="M130 134v-14" stroke="#1E4D3A" stroke-width="3" stroke-linecap="round"/><path d="M130 121c-9 0-14-6-13-14 8 0 13 5 13 14Z" fill="#2E7D5B"/><path d="M130 121c9 0 14-6 13-14-8 0-13 5-13 14Z" fill="#C4551C"/><text x="130" y="160" text-anchor="middle" style="font-size:12px;font-weight:700;fill:var(--ink)">Anak</text>';
+ $("#ring").innerHTML=h}
+$("#clr").onclick=()=>{S[cur].t.forEach((_,i)=>get(cur,i).clear());tasks();sum()};
+tabs();tasks();sum();
+</script>
+</body>
+</html>
